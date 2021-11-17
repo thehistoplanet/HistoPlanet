@@ -46,3 +46,9 @@ hr {
 .story-extract{
   font-style: italic;
 }
+
+extract{
+  font-size: 0.8em;
+  font-style:italic;
+  text-align: left;
+}
