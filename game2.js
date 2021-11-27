@@ -224,7 +224,7 @@ function checkAnswer_3_(){
 
 button_part_3_1.addEventListener("click", function(){
     button_select_1.remove();
-    select_1.appendChild(document.createTextNode("_ Bạn đã chọn đi bên TRÁI."));
+    select_1.appendChild(document.createTextNode("_ Đương nhiên theo tôi rồii."));
     part_3.appendChild(part_3_1);
     correct_3.remove();
     wrong_3.remove();
@@ -232,7 +232,7 @@ button_part_3_1.addEventListener("click", function(){
 
 button_part_3_2.addEventListener("click", function(){
     button_select_1.remove();
-    select_1.appendChild(document.createTextNode("_ Bạn đã chọn đi bên PHẢI."));
+    select_1.appendChild(document.createTextNode("_ Theo Duyên chứ còn phải hỏi."));
     part_3.appendChild(part_3_2);
     correct_3_.remove();
     wrong_3_.remove(); 
