@@ -155,8 +155,9 @@ function checkAnswer_3(){
         }
         wrong_3.remove();
         check_3.appendChild(correct_3);
-        part_3.appendChild(thanks);
         part_3.appendChild(end);
+        part_3.appendChild(thanks);
+
         
         countWrong=0;
     }

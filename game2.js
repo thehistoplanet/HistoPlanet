@@ -45,7 +45,7 @@ var button_3_0_=document.getElementById("button_3_0_");
 
 //story part 3 select
 var select_1=document.getElementById("select_1");
-var button_select=document.getElementById("button_select");
+var button_select_1=document.getElementById("button_select_1");
 var button_part_3_1=document.getElementById("button_part_3_1");
 var button_part_3_2=document.getElementById("button_part_3_2");
 
@@ -66,6 +66,10 @@ var button_4_0=document.getElementById("button_3_0");
 
 var thanks=document.getElementById("thanks");
 var end=document.getElementById("end");
+
+var reset_button=document.getElementById("reset_button");
+var reset_true=document.getElementById("reset_true");
+var reset_false=document.getElementById("reset_false");
 
 var limitWrong=2;
 var output_text=0;
@@ -104,6 +108,7 @@ function showPart4(){
     part_4_2.remove();
     end.remove();
     thanks.remove();
+    reset_button.remove();
 }
 
 
@@ -228,6 +233,7 @@ button_part_3_1.addEventListener("click", function(){
     part_3.appendChild(part_3_1);
     correct_3.remove();
     wrong_3.remove();
+    answer[2]="CANOPIC";
 })
 
 button_part_3_2.addEventListener("click", function(){
@@ -262,8 +268,7 @@ button_part_4_1.addEventListener("click", function(){
     button_select_2.remove();
     select_2.appendChild(document.createTextNode("_ Ra sông Nile nào!!"));
     part_4.appendChild(part_4_1);
-    part_4.appendChild(thanks);
-    part_4.appendChild(end);
+    part_4_1.appendChild(reset_button);
 
 })
 
@@ -271,6 +276,36 @@ button_part_4_2.addEventListener("click", function(){
     button_select_2.remove();
     select_2.appendChild(document.createTextNode("_ Đến kim tự tháp nào!!"));
     part_4.appendChild(part_4_2);
-    part_4.appendChild(thanks);
+    part_4_2.appendChild(reset_button);
+
+})
+
+reset_false.addEventListener("click", function(){
+    reset_button.remove();
     part_4.appendChild(end);
+    part_4.appendChild(thanks);
+
+})
+
+
+reset_true.addEventListener("click",function(){
+    part_4.remove();
+    part_3.remove();
+    showPart3();
+    output_text=2;
+    select_1.lastChild.remove();
+    
+    part_3.appendChild(button_select_1);
+
+    if(button_3_0.firstChild!=button_3_0.lastChild){
+    button_3_0.lastChild.remove();
+    }
+    if(button_3_0_.firstChild!=button_3_0_.lastChild){
+    button_3_0_.lastChild.remove();
+    }
+
+
+    select_2.lastChild.remove();
+
+    part_4.appendChild(button_select_2);
 })
