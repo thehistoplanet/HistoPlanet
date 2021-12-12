@@ -206,7 +206,7 @@ function checkAnswer_4(){
         countWrong=0;
         story.appendChild(next_part);
     }
-    else if(output_text==2)
+    else if(output_text==3)
     {
         if(countWrong>=limitWrong)
         {
